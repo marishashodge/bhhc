@@ -8,6 +8,8 @@ MyApp is a [Spring Boot](https://spring.io/guides/gs/spring-boot/) application t
 
 ### Running MyApp
 
+`$ cd myapp`
+
 `$ ./mvnw spring-boot:run`
 
 Navigate to [localhost:8080/hello](http:localhost:8080/hello) and you should see "Hello Friend!" on the welcome screen.
