@@ -29,15 +29,8 @@ public class MyAppController {
 
     @GetMapping("/companies/{company}")
     public String company(@PathVariable("company") String company, Model model) {
-        System.out.print("COMPANY");
-
-        System.out.print(company);
-
         // Retrieve the reasons for the company that was passed into the path variable
         List<Reason> reasons = repository.findByCompany(company);
-
-        System.out.print(reasons);
-
 
         if (reasons.size() >= 1) {
             model.addAttribute("company", company);
