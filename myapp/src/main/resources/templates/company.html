@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Company ${company}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h2 style="text-transform: uppercase" th:text="'Reasons to work at ' + ${company} + '!'" />
+
+<ul><th:block th:each="reason: ${reasons}">
+    <li th:text="${reason.description}" />
+    </th:block>
+</ul>
+
+</body>
+</html>
